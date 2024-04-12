@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'vote/**'
+      - 'worker/**'
+      - 'result/**'
 
 jobs:
   build-and-push:

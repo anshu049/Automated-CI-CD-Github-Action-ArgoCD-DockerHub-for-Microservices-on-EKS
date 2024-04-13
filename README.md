@@ -5,7 +5,8 @@
 
 
 ## ARCHITECTURE OF APPLICATION
-<img width="764" alt="voting-app-latest" src="https://github.com/anshuhtwt/CI-CD-using-Jenkins-and-ArgoCD-into-EKS-for-microservices/assets/95365748/c1a8030c-5129-4e19-913c-5a2686677686">
+<img width="1027" alt="voting-app" src="https://github.com/anshu049/Automated-CI-CD-Github-Action-ArgoCD-DockerHub-for-Microservices-on-EKS/assets/95365748/3332eb78-3cd0-472c-9ede-fb145799a702">
+
 
 **The app consists of five components: Voting-App, Redis, Worker, Postgres and Result-App.**
    - **Voting-App:** A web interface for users to cast their votes.
@@ -19,7 +20,8 @@
 **Create Secret**
 ![Screenshot 2024-04-13 at 1 51 07 AM](https://github.com/anshu049/Automated-CI-CD-Github-Action-ArgoCD-DockerHub-for-Microservices-on-EKS/assets/95365748/d662040a-4272-4fc5-a1a9-fbc3f5ec7327)
 
-![CI PART 2](https://github.com/anshu049/CI-CD-using-Jenkins-and-ArgoCD-into-EKS-for-microservices/assets/95365748/dec4b8bc-aa36-473e-b274-bd3d831ab84e)
+![CI PART 2](https://github.com/anshu049/Automated-CI-CD-Github-Action-ArgoCD-DockerHub-for-Microservices-on-EKS/assets/95365748/8c2c769f-9f0c-4b46-bd22-97328f1ef95c)
+
 
 
 ## Create infrastructure using Terraform
@@ -30,7 +32,7 @@
 ## CONTINUOUS-DELIVERY
 **For git repository containing all the Manifests for the app, including the Kubernetes Deployment, Service and other resources [click here](https://github.com/anshuhtwt/Voting-App-Manifests).**
 
-<img width="1315" alt="CD-PART" src="https://github.com/anshuhtwt/CI-CD-using-Jenkins-and-ArgoCD-into-EKS-for-microservices/assets/95365748/a84c7362-bff1-4d4a-8910-ec4f8bdfc051">
+
 
 
 **Setup**
@@ -41,13 +43,15 @@
 - Installed ArgoCD inside existing Kubernetes cluster.
 - Expose the ArgoCD UI using a Kubernetes LoadBalancer service and retrieve the ArgoCD UI URL and login using the initial password and create application using [this](https://github.com/anshu049/Voting-App-Manifests/blob/master/application.yaml) yaml file.
 
-![Argo UI](https://github.com/anshu049/CI-CD-using-Jenkins-and-ArgoCD-into-EKS-for-microservices/assets/95365748/511bb9fc-1b78-407a-934d-076329868e5d)
+![Argo UI](https://github.com/anshu049/Automated-CI-CD-Github-Action-ArgoCD-DockerHub-for-Microservices-on-EKS/assets/95365748/4460e7d9-8086-4ce5-adea-d53622a91e14)
+
 
 
 - Access voting and result app using LoadBalancer attached to it.
 
-![Vote UI](https://github.com/anshu049/CI-CD-using-Jenkins-and-ArgoCD-into-EKS-for-microservices/assets/95365748/10ca6727-e26d-4b5c-b52b-4801eaacc4c7)
+![Vote UI](https://github.com/anshu049/Automated-CI-CD-Github-Action-ArgoCD-DockerHub-for-Microservices-on-EKS/assets/95365748/83ef9a51-a908-474f-97f7-bae6727f17f4)
 
 
-![Result UI](https://github.com/anshu049/CI-CD-using-Jenkins-and-ArgoCD-into-EKS-for-microservices/assets/95365748/98630dd4-5b2f-4b67-b406-b7413ac0c61c)
+![Result UI](https://github.com/anshu049/Automated-CI-CD-Github-Action-ArgoCD-DockerHub-for-Microservices-on-EKS/assets/95365748/49c156f8-9ab4-4e4e-83d8-2a2e4df931f4)
+
 
